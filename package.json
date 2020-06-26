@@ -1,6 +1,6 @@
 {
   "name": "simple-app-info-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple metadata app logger",
   "main": "index.js",
   "scripts": {

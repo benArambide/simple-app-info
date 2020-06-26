@@ -4,7 +4,7 @@ This is a simple webpack plugin to generate a json file with your app informatio
 ## Installation
 
 ```
-npm install simple-app-info --save-dev
+npm i simple-app-info-webpack-plugin
 ```
 
 
@@ -17,13 +17,17 @@ const SimpleAppInfoWebpackPlugin = require('simple-app-info-webpack-plugin')
 
 module.exports = {
   ...,
-  plugins: [
-    new SimpleAppInfoWebpackPlugin({appInfoFileName: 'my.app.info.json'})
-  ] 
+  configureWebpack: {
+    plugins: [
+        new SimpleAppInfoWebpackPlugin({
+          appInfoFileName: 'my.app.info.json'
+        })
+      ] 
+  } 
 }
 ```
 
-And the plugin will generate a 'my.app.info.json' file with the the metadata information
+And the plugin will generate a 'my.app.info.json' file with the metadata information
 
 Example.
 ```json
@@ -35,3 +39,5 @@ Example.
     "appLastCommitHash": "[last git commit hash]"
 }
 ```
+
+We recommend include the metadata json in your .gitignore file 
