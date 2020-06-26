@@ -1,0 +1,27 @@
+{
+  "name": "simple-app-info",
+  "version": "1.0.0",
+  "description": "Simple metadata app logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "metadata",
+    "single",
+    "page",
+    "application",
+    "javascript",
+    "webpack",
+    "plugin",
+    "plugin"
+  ],
+  "author": "josueaqp92@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "git-last-commit": "^1.0.0",
+    "schema-utils": "^2.7.0",
+    "time-stamp": "^2.2.0",
+    "write-json-file": "^4.3.0"
+  }
+}
